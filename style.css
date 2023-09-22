@@ -171,3 +171,126 @@
     width: 60px;
     height: 20px;
 }
+
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move1 1s linear infinite;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move2 1s linear infinite;
+}
+
+
+@keyframes move1 {
+
+   0% { 
+    top: -10%;
+    left:0;
+   }
+
+   50% {
+    top:-10%;
+    left:calc(0% - 15px);
+   }
+
+   100% {
+     
+    top: -10%;
+    left:0;
+   }
+   }
+
+
+   @keyframes move2 {
+
+    0% { 
+     bottom: -10%;
+     right:0;
+    }
+ 
+    50% {
+        bottom:-10%;
+        right:calc(0% - 30px);
+    }
+
+    100% {
+        bottom: -10%;
+     right:0;
+    }
+ 
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: rotate3 5s linear infinite;
+}
+
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: rotate4 5s linear infinite ;
+}
+
+    
+@keyframes rotate3 {
+   
+
+0% {
+    top:-10%;
+    left:calc(0% - 15px);
+} 
+
+25% {
+top: 90%;
+left:calc(0% - 15px);
+}
+
+
+  50% {
+    top: 90%;
+    left:100%;
+}
+
+    75% {
+        top: -10%;
+        left:100%;
+    transform: translate(-50%);
+
+    }
+
+    100% {
+        top: -10%;
+        left:calc(0% - 15px);
+    }
+}
+
+@keyframes rotate4 {
+   
+
+    0% {
+    bottom:-10%;
+    right:calc(0% - 30px);
+}
+
+25% {
+    bottom: 90%;
+    right:calc(0% - 30px);
+}
+  
+
+50% {
+    bottom: 90%;
+    right:calc(100% - 15px);
+    transform: translate(50%);
+}
+
+75% {
+    bottom: -10%;
+    right:calc(100% - 15px);
+    transform: translate(50%);
+}
+
+100% {
+    bottom:-10%;
+    right:calc(0% - 30px);
+}
+}
